@@ -13,4 +13,5 @@ class Menu
     content.keys.each(&see)
     "They're all delicious!"
   end
+
 end

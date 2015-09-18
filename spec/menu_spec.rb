@@ -11,4 +11,5 @@ describe Menu do
       expect(subject.see_content).to eq "They're all delicious!"
     end
   end
+
 end

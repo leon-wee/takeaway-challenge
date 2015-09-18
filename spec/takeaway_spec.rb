@@ -3,7 +3,7 @@ require 'takeaway'
 describe Takeaway do
   let(:menu) { double :menu }
   before(:each) { allow(menu).to receive(:content).and_return({ chicken: 4, lamb: 7}) }
-  subject { Takeaway.new(menu) }
+  subject(:takeaway) { described_class.new(menu) }
 
   describe "#place_order" do
     it "should return total costs of order" do
